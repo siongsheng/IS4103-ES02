@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 
 /**
  *
- * @author Julian as admin
+ * @author Julian
  */
 @Entity
 public class Block implements Serializable {
