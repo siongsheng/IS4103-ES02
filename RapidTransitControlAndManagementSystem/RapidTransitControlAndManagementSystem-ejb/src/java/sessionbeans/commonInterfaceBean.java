@@ -36,5 +36,5 @@ public class commonInterfaceBean implements commonInterfaceBeanRemote {
         Employee employee = em.find(Employee.class, username);
         if(employee!=null) return true;
         return false;
-    }
+    } 
 }
