@@ -25,7 +25,7 @@ public class Employee implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userID;
+    private Long employeeID;
     private String username;
     private String name;
     private String password;
@@ -268,29 +268,29 @@ public class Employee implements Serializable {
         this.username = username;
     }
 
-    public Long getUserID() {
-        return userID;
+    public Long getEmployeeID() {
+        return employeeID;
     }
 
-    public void setUserID(Long userID) {
-        this.userID = userID;
+    public void setEmployeeID(Long employeeID) {
+        this.employeeID = employeeID;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (userID != null ? userID.hashCode() : 0);
+        hash += (employeeID != null ? employeeID.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the userID fields are not set
+        // TODO: Warning - this method won't work in the case the employeeID fields are not set
         if (!(object instanceof Employee)) {
             return false;
         }
         Employee other = (Employee) object;
-        if ((this.userID == null && other.userID != null) || (this.userID != null && !this.userID.equals(other.userID))) {
+        if ((this.employeeID == null && other.employeeID != null) || (this.employeeID != null && !this.employeeID.equals(other.employeeID))) {
             return false;
         }
         return true;
@@ -298,7 +298,7 @@ public class Employee implements Serializable {
 
     @Override
     public String toString() {
-        return "entities.Users[ id=" + userID + " ]";
+        return "entities.Users[ id=" + employeeID + " ]";
     }
     
 }
