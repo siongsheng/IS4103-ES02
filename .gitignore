@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 *.properties
 RapidTransitControlAndManagementSystem/build/META-INF/MANIFEST.MF
 RapidTransitControlAndManagementSystem/build/RapidTransitControlAndManagementSystem-ejb.jar
@@ -25,3 +26,5 @@ RapidTransitControlAndManagementSystem/RapidTransitControlAndManagementSystem-ej
 /RTCMS/RTCMS-war/build/
 /RTCMS/RTCMS-war/dist/
 /RapidTransitControlAndManagementSystem/nbproject/private/
+=======
+>>>>>>> origin/master
