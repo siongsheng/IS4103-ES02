@@ -24,7 +24,7 @@ public class Train implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer TrainID;
+    private Integer trainID;
     
     private String status;
 
@@ -66,28 +66,28 @@ public class Train implements Serializable {
     }
 
     public Integer getTrainID() {
-        return TrainID;
+        return trainID;
     }
 
-    public void setTrainID(Integer TrainID) {
-        this.TrainID = TrainID;
+    public void setTrainID(Integer trainID) {
+        this.trainID = trainID;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (TrainID != null ? TrainID.hashCode() : 0);
+        hash += (trainID != null ? trainID.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the TrainID fields are not set
+        // TODO: Warning - this method won't work in the case the trainID fields are not set
         if (!(object instanceof Train)) {
             return false;
         }
         Train other = (Train) object;
-        if ((this.TrainID == null && other.TrainID != null) || (this.TrainID != null && !this.TrainID.equals(other.TrainID))) {
+        if ((this.trainID == null && other.trainID != null) || (this.trainID != null && !this.trainID.equals(other.trainID))) {
             return false;
         }
         return true;
@@ -95,7 +95,7 @@ public class Train implements Serializable {
 
     @Override
     public String toString() {
-        return "entities.Train[ id=" + TrainID + " ]";
+        return "entities.Train[ id=" + trainID + " ]";
     }
     
 }
