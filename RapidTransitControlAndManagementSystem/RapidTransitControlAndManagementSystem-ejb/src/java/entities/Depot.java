@@ -22,7 +22,7 @@ public class Depot implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer depotID;
     
     private String depotName;
     
@@ -91,29 +91,29 @@ public class Depot implements Serializable {
         this.depotName = depotName;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getDepotID() {
+        return depotID;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setDepotID(Integer depotID) {
+        this.depotID = depotID;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (depotID != null ? depotID.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
+        // TODO: Warning - this method won't work in the case the depotID fields are not set
         if (!(object instanceof Depot)) {
             return false;
         }
         Depot other = (Depot) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.depotID == null && other.depotID != null) || (this.depotID != null && !this.depotID.equals(other.depotID))) {
             return false;
         }
         return true;
@@ -121,7 +121,7 @@ public class Depot implements Serializable {
 
     @Override
     public String toString() {
-        return "entities.Depot[ id=" + id + " ]";
+        return "entities.Depot[ id=" + depotID + " ]";
     }
     
 }

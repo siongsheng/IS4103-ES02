@@ -26,7 +26,7 @@ public class Role implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer roleID;
 
     private String roleName;
 
@@ -88,29 +88,29 @@ public class Role implements Serializable {
         this.roleName = roleName;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getRoleID() {
+        return roleID;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setRoleID(Integer roleID) {
+        this.roleID = roleID;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (roleID != null ? roleID.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
+        // TODO: Warning - this method won't work in the case the roleID fields are not set
         if (!(object instanceof Role)) {
             return false;
         }
         Role other = (Role) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.roleID == null && other.roleID != null) || (this.roleID != null && !this.roleID.equals(other.roleID))) {
             return false;
         }
         return true;
@@ -118,7 +118,7 @@ public class Role implements Serializable {
 
     @Override
     public String toString() {
-        return "entities.Role[ id=" + id + " ]";
+        return "entities.Role[ id=" + roleID + " ]";
     }
     
 }
