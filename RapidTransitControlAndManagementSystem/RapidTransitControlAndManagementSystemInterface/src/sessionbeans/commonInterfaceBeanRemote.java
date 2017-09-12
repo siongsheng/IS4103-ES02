@@ -15,5 +15,5 @@ import javax.ejb.Remote;
 public interface commonInterfaceBeanRemote {
     public boolean employeeLogin(String username, String password);
     
-    public boolean findEmployee(String username);
+    public boolean findEmployee(String username); 
 }
