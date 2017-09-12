@@ -19,7 +19,7 @@ import javax.persistence.OneToOne;
 
 /**
  *
- * @author Julian as admin
+ * @author Julian 
  */
 @Entity
 public class Station implements Serializable {

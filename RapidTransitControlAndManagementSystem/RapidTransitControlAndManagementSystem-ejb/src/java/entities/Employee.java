@@ -17,7 +17,7 @@ import javax.persistence.OneToMany;
 
 /**
  *
- * @author Julian as admin
+ * @author Julian 
  */
 @Entity(name="Users")
 public class Employee implements Serializable {

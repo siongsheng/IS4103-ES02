@@ -18,7 +18,7 @@ import javax.persistence.ManyToOne;
 
 /**
  *
- * @author Julian as admin
+ * @author Julian 
  */
 @Entity
 public class Role implements Serializable {
