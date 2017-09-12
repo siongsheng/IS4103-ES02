@@ -15,7 +15,7 @@ import javax.persistence.PersistenceContext;
  * @author User
  */
 @Stateless
-public class commonInterfaceBean implements commonInterfaceBeanRemote {
+public class commonInterfaceBean implements commonInterfaceBeanLocal {
 
     @PersistenceContext
     private EntityManager em;
@@ -36,5 +36,5 @@ public class commonInterfaceBean implements commonInterfaceBeanRemote {
         Employee employee = em.find(Employee.class, username);
         if(employee!=null) return true;
         return false;
-    } 
+    }
 }
