@@ -15,3 +15,13 @@ RapidTransitControlAndManagementSystem/nbproject/private/private.properties
 RapidTransitControlAndManagementSystem/RapidTransitControlAndManagementSystem-ejb/nbproject/private/private.properties
 /RapidTransitControlAndManagementSystem/commonInfrastructureClient/nbproject/private/
 /RapidTransitControlAndManagementSystem/RapidTransitControlAndManagementSystemInterface/nbproject/private/
+/RTCMS/nbproject/private/
+/RTCMS/RTCMS-war/nbproject/private/
+/RTCMS/RTCMS-ejb/nbproject/private/
+/RTCMS/dist/
+/RTCMS/build/
+/RTCMS/RTCMS-ejb/build/
+/RTCMS/RTCMS-ejb/dist/
+/RTCMS/RTCMS-war/build/
+/RTCMS/RTCMS-war/dist/
+/RapidTransitControlAndManagementSystem/nbproject/private/
