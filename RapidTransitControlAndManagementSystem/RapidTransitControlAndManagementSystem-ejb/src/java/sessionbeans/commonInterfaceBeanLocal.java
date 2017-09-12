@@ -16,4 +16,6 @@ public interface commonInterfaceBeanLocal {
     public boolean employeeLogin(String username, String password);
     
     public boolean findEmployee(String username);
+    
+    public boolean addEmployee (String username, String name, String password, int salary, String jobRole, int yearsOfExp, String NRIC, String email, String contact, String address, int age);
 }

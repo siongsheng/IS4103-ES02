@@ -43,6 +43,20 @@ public class Employee implements Serializable {
     public Employee() {
         this.roles = new ArrayList<Role>();
     }
+    
+    public void create( String username, String name, String password, int salary, String jobRole, int yearsOfExp, String NRIC, String email, String contact, String address, int age){
+        this.username = username;
+        this.name = name;
+        this.password = password;
+        this.salary = salary;
+        this.jobRole = jobRole;
+        this.yearsOfExp = yearsOfExp;
+        this.NRIC = NRIC;
+        this.email = email;
+        this.contact = contact;
+        this.address = address;
+        this.age = age;
+    }
 
     
     
